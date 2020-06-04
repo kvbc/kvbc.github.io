@@ -1,29 +1,49 @@
-/* H-Bold */
 @font-face {
     font-family: "H-Bold";
-    src: url("./fonts/H-Bold.woff2") format("woff2");
+    src: url("fonts/H-Bold.woff2") format("woff2");
 }
-.hbold {
-    font-family: "H-Bold";
-}
-
-/* H-Book */
 @font-face {
     font-family: "H-Book";
-    src: url("./fonts/H-Book.woff2") format("woff2");
-}
-.hbook {
-    font-family: "H-Book"
+    src: url("fonts/H-Book.woff2") format("woff2");
 }
 
-textarea {
+button {
+    border: none;
+    outline: none;
+}
+
+.title {
+    color: #454545;
+    font-family: "H-Bold";
+}
+
+.prefixes_suffixes {
+    color: #cccccc;
+    font-family: "H-Book";
+}
+
+.prefix_suffix {
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: "H-Book";
+    background-size: 100%;
+    background-image: url("img/blank.png");
+}
+
+.cname {
+    color: #ffba4a;
+    font-family: "H-Book";
+}
+
+.cname_textarea {
     min-height: 20px;
     min-width: 250px;
+    font-size: 25px;
     font-family: "H-Book";
+    vertical-align: middle;
     outline-color: #ffba4a;
     border: 2px solid #dddddd;
-}
-
-input {
-    outline: none;
 }
