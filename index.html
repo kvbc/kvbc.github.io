@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Discord Channel Name Creator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div style="text-align:center">
+            <h1 class="hbold" style="color:#454545">Discord Channel Name Creator</h1>
+            <br><br><br>
+
+            <h2 class="hbook" style="color:#cccccc">Prefixes</h2>
+            <div id="prefix-container">
+                <input type="image" src="./img/blank.png" width=50 height=50>
+            </div>
+
+            <h2 class="hbook" style="color:#cccccc">Suffixes</h2>
+
+            <h2 id="ChannelName" class="hbook" style="color:#ffba4a">Channel Name</h2>
+            <textarea rows=4 cols=45 placeholder="Channel Name" style="vertical-align:middle" autofocus=true spellcheck=false onfocus="onf_ChannelName()" onfocusout="onf_out_ChannelName()"></textarea>
+                <script>
+                    var ChannelName = document.getElementById("ChannelName");
+                    function onf_ChannelName()                           {
+                        ChannelName.style = "color:#ffba4a";             }
+                    function onf_out_ChannelName()                       {
+                        ChannelName.style = "color:#cccccc";             }
+                </script>
+        </div>
+        <div id="select">
+
+        </div>
+    </body>
+</html>
