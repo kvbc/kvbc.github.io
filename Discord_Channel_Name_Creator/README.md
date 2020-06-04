@@ -1,3 +1,4 @@
-#f
+# Discord Channel Name Creator
 
-A fun lil project i've been lastly working on
+A fun little project I've been lastly working on
+tbc..
