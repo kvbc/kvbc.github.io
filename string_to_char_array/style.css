@@ -1,0 +1,68 @@
+@font-face {
+    font-family: "H-Bold";
+    src: url("fonts/H-Bold.woff2") format("woff2");
+}
+@font-face {
+    font-family: "H-Book";
+    src: url("fonts/H-Book.woff2") format("woff2");
+}
+
+div {
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+    width: 129px;
+    height: 33px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: "H-Bold";
+    background-size: 100%;
+    background-image: url("img/button.png");
+}
+
+input[type="checkbox"] {
+    transform: scale(2);
+    filter: hue-rotate(290deg);
+}
+
+label {
+    display: block;
+    margin-left: 45%;
+    text-align: left;
+    color: #656565;
+    font-size: 20px;
+    font-family: "H-Bold";
+}
+
+textarea {
+    min-width: 250px;
+    min-height: 30px;
+    max-width: 500px;
+    max-height: 200px;
+    vertical-align: middle;
+    color: #606060;
+    font-size: 25px;
+    font-family: "H-Book";
+    outline-color: #ffba4a;
+    border: 2px solid #dddddd;
+}
+
+.title {
+    color: #ffba4a;
+    font-family: "H-Bold";
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    font-size: 12px;
+    font-family: "H-Book";
+    color: #ffedd1;
+    background-color: #ffba4a;
+}
