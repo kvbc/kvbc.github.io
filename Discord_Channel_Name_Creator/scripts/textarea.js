@@ -1,5 +1,6 @@
 var cname = document.getElementsByClassName("cname")[0];
 var cname_textarea = document.getElementsByClassName("cname-textarea")[0];
+var output = document.getElementsByClassName("output")[0];
 
 cname_textarea.addEventListener("focus", function() {
     cname.style.color="#ffba4a";
@@ -7,15 +8,4 @@ cname_textarea.addEventListener("focus", function() {
 
 cname_textarea.addEventListener("focusout", function() {
     cname.style.color="#cccccc";
-})
-
-cname_textarea.addEventListener("keyup", function(e){
-    if(isAlpha(e.key))
-        for(var i=1; i<=3; i++) {
-            var element = document.getElementsByClassName(`option-${i}`)[0];
-            if(element.checked) {
-                cname_textarea.value = cname_textarea.value.replace(e.key, to[element.id](e.key));
-                break;
-            }
-        }
 })
