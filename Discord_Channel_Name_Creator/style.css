@@ -37,6 +37,18 @@ label {
     margin-left: 2px;
 }
 
+textarea {
+    min-width: 250px;
+    min-height: 30px;
+    max-width: 500px;
+    max-height: 200px;
+    vertical-align: middle;
+    font-size: 25px;
+    font-family: "H-Book";
+    outline-color: #ffba4a;
+    border: 2px solid #dddddd;
+}
+
 .title {
     color: #ffba4a;
     font-family: "H-Bold";
@@ -56,18 +68,6 @@ label {
 .cname {
     color: #ffba4a;
     font-family: "H-Book";
-}
-
-.cname-textarea {
-    min-width: 250px;
-    min-height: 30px;
-    max-width: 500px;
-    max-height: 200px;
-    vertical-align: middle;
-    font-size: 25px;
-    font-family: "H-Book";
-    outline-color: #ffba4a;
-    border: 2px solid #dddddd;
 }
 
 .text-styles {
