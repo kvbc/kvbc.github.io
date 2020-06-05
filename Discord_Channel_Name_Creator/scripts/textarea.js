@@ -14,8 +14,12 @@ cname_textarea.addEventListener("keyup", function(e){
         for(var i=1; i<=3; i++) {
             var element = document.getElementsByClassName(`option-${i}`)[0];
             if(element.checked) {
-                console.log(element.id);
-                cname_textarea.value = cname_textarea.value.replace(e.key, to[element.id](e.key));
+                for(var j=65; j<=122; j++) {
+                    if(j<97 && j>90) continue;
+                    var key = String.fromCharCode(j);
+                    var re = new RegExp(key,'g');
+                    cname_textarea.value = cname_textarea.value.replace(re, to[element.id](key));
+                }
                 break;
             }
         }
