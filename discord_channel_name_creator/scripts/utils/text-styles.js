@@ -5,6 +5,18 @@ const cursiveUpper = ["𝓐","𝓑","𝓒","𝓓","𝓔","𝓕","𝓖","𝓗","�
 const boldLower = ["𝗮","𝗯","𝗰","𝗱","𝗲","𝗳","𝗴","𝗵","𝗶","𝗷","𝗸","𝗹","𝗺","𝗻","𝗼","𝗽","𝗾","𝗿","𝘀","𝘁","𝘂","𝘃","𝘄","𝘅","𝘆","𝘇"];
 const boldUpper = ["𝗔","𝗕","𝗖","𝗗","𝗘","𝗙","𝗚","𝗛","𝗜","𝗝","𝗞","𝗟","𝗠","𝗡","𝗢","𝗣","𝗤","𝗥","𝗦","𝗧","𝗨","𝗩","𝗪","𝗫","𝗬","𝗭"];
 
+function toAlpha(char) {
+    var lower = [italicLower, cursiveLower, boldLower];
+    var upper = [italicUpper, cursiveUpper, boldUpper];
+    var cases = [lower, upper];
+    for(var ce in cases)
+        for(var style in cases[ce])
+            for(var c in cases[ce][style])
+                if(cases[ce][style][c] == char)
+                    return String.fromCharCode((ce==0 ? 97 : 65) + Number(c));
+    return char;
+}
+
 to.italic = function(char) {
     return (char==char.toLowerCase() ? italicLower : italicUpper)[char.toLowerCase().charCodeAt(0)-97];
 }
