@@ -1,2 +1,1 @@
-website stuff
-mainly for tests
+pages mainly for tests
