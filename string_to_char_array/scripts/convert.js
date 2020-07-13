@@ -11,7 +11,7 @@ button.addEventListener("click", function() {
         if      (options.toLowerCase)          char = char.toLowerCase();
         else if (options.toUpperCase)          char = char.toUpperCase();
         else if (options.toReverseCase)        char = (char == char.toLowerCase() ? char.toUpperCase() : char.toLowerCase());
-        final += `"${char}"${c==value.length-1 ? "" : ", "}`;
+        final += `'${char}'${c==value.length-1 ? "" : ", "}`;
     }
     output.value = final + "]";
 })
