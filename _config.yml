@@ -1,0 +1,30 @@
+# Site settings
+## Change the values as needed.
+title: kvbc
+description: "A jekyll theme implementing material design by using muicss."
+keywords: "kvbc, sus"
+url: ""
+baseurl: "" # the subpath of your site, e.g. /blog/
+paginate: 5
+paginate_path: "page:num"
+# Build settings
+markdown: kramdown
+highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: :compressed
+links:
+  github: kvbc
+exclude:
+  - bower_components
+  - README.md
+full_name: kvbc
+plugins:
+  - jekyll-paginate
+
+##set this to enable disqus commenting
+disqus: kvbc-blog
+
+##set this to enable google analytics
+#ga_id: analyticsID
+#ga_domain: bitwiser.in
